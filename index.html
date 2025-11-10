@@ -1,0 +1,1678 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Serenité</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-papc7r+H+I1mZq2+2QjzM9RWZ7N1paZ1I5l0FjH+jZlE2OQlR8mCx2mg5W6Rl8V2/u0m3HFF9KHbyNaxZpX1hg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- lora font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="img/png" href="assets/favicon.png" />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-xxl navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+          <a href="#"> <h1 class="navbar-brand">Serenité</h1> </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#tienda">Nuestra tienda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#lineas">Nuestra línea</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#taller">Nuestro taller</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#diseña">Diseñá tu fragancia</a>
+              </li>
+
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="#"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalNosotros"
+                  >Nosotros</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Modal "Nosotros" -->
+      <div
+        class="modal fade"
+        id="modalNosotros"
+        tabindex="-1"
+        aria-labelledby="modalNosotrosLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-light text-dark">
+            <!-- Header -->
+            <div class="modal-header border-0">
+              <h2 class="modal-title fw-bold text-dark" id="modalNosotrosLabel">
+                Sobre Nosotros
+              </h2>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Cerrar"
+              ></button>
+            </div>
+
+            <!-- Body -->
+            <div class="modal-body">
+              <div class="autor-container d-flex">
+                <div class="autor-foto">
+                  <img
+                    src="assets/bella-foto.jpeg"
+                    alt="Foto del Alumno"
+                    width="250"
+                  />
+                </div>
+
+                <div class="autor-info">
+                  <h3>Datos del autor</h3>
+                  <p><strong>Nombre:</strong>Bella Flor Sosa</p>
+                  <p><strong>Fecha de Nacimiento:</strong>06 de Diciembre</p>
+                  <p><strong>Correo:</strong>bella.sosa@davinci.edu.ar</p>
+                  <div class="autor-redes">
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-instagram fa-lg"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-facebook-f fa-lg"></i
+                    ></a>
+                    <a href="#" target="_blank"
+                      ><i class="fab fa-twitter fa-lg"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="modal-footer border-0">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./assets/carousel/primer-img/aceite-madera_pwwfht_c_scale,w_2180.jpg
+                "
+              />
+              <source
+                media="(min-width: 992px)"
+                srcset="
+                  ./assets/carousel/primer-img/aceite-madera_pwwfht_c_scale,w_1823.jpg
+                "
+              />
+              <img
+                src="./assets/carousel/primer-img/aceite-madera_pwwfht_c_scale,w_1080.jpg"
+                alt="Aceite de madera"
+                class="d-block w-100"
+              />
+            </picture>
+
+            <div
+              class="carousel-caption d-none d-md-block position-absolute top-70 end-0 translate-middle-y text-start pe-5"
+            >
+              <h2>Hecho a mano, con alma</h2>
+              <p>
+                Cada pieza está creada con dedicación, combinando fragancias
+                únicas y diseño artesanal.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./assets/carousel/segunda-img/vela-madera_qegqws_c_scale,w_2180.jpg
+                "
+              />
+              <source
+                media="(min-width: 992px)"
+                srcset="
+                  ./assets/carousel/segunda-img/vela-madera_qegqws_c_scale,w_1692.jpg
+                "
+              />
+              <img
+                src="./assets/carousel/segunda-img/vela-madera_qegqws_c_scale,w_1080.jpg"
+                alt="Vela de madera"
+                class="d-block w-100"
+              />
+            </picture>
+            <div
+              class="carousel-caption d-none d-md-block position-absolute top-70 end-0 translate-middle-y text-start pe-5"
+            >
+              <h2>Conectá con la calma</h2>
+              <p>
+                Descubrí aromas que transforman tu espacio en un refugio de
+                armonía y bienestar.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./assets/carousel/tercer-img/vela-eucalipto-_avtkjm_c_scale,w_2180.jpg
+                "
+              />
+              <source
+                media="(min-width: 992px)"
+                srcset="
+                  ./assets/carousel/tercer-img/vela-eucalipto-_avtkjm_c_scale,w_1525.jpg
+                "
+              />
+              <img
+                src="./assets/carousel/tercer-img/vela-eucalipto-_avtkjm_c_scale,w_1080.jpg"
+                alt="Vela de eucalipto"
+                class="d-block w-100"
+              />
+            </picture>
+            <div
+              class="carousel-caption d-none d-md-block position-absolute top-70 end-0 translate-middle-y text-start pe-5"
+            >
+              <h2>Un aroma, una historia</h2>
+              <p>
+                Dejá que cada esencia te transporte a un momento, un recuerdo o
+                una emoción.
+              </p>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+
+      <!-- SECCION TRES ICONOS -->
+
+      <div class="container" id="tienda">
+        <div class="row">
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill="currentColor"
+                class="bi bi-heart"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"
+                />
+              </svg>
+            </div>
+            <h3>Hecho a mano</h3>
+            <p>
+              Todo el proceso se hacen con manos expertas, la preparación, el
+              volcado, la terminación y el empaque.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill="currentColor"
+                class="bi bi-gem"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z"
+                />
+              </svg>
+            </div>
+            <h3>Calidad</h3>
+            <p>
+              Más de 20 años de experiencia cuidando cada detalle en el diseño,
+              producción y entrega de todos nuestros productos.
+            </p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
+            <div class="p-4">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="60"
+                height="60"
+                fill="currentColor"
+                class="bi bi-leaf"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M1.4 1.7c.216.289.65.84 1.725 1.274 1.093.44 2.884.774 5.834.528l.37-.023c1.823-.06 3.117.598 3.956 1.579C14.16 6.082 14.5 7.41 14.5 8.5c0 .58-.032 1.285-.229 1.997q.198.248.382.54c.756 1.2 1.19 2.563 1.348 3.966a1 1 0 0 1-1.98.198c-.13-.97-.397-1.913-.868-2.77C12.173 13.386 10.565 14 8 14c-1.854 0-3.32-.544-4.45-1.435-1.125-.887-1.89-2.095-2.391-3.383C.16 6.62.16 3.646.509 1.902L.73.806zm-.05 1.39c-.146 1.609-.008 3.809.74 5.728.457 1.17 1.13 2.213 2.079 2.961.942.744 2.185 1.22 3.83 1.221 2.588 0 3.91-.66 4.609-1.445-1.789-2.46-4.121-1.213-6.342-2.68-.74-.488-1.735-1.323-1.844-2.308-.023-.214.237-.274.38-.112 1.4 1.6 3.573 1.757 5.59 2.045 1.227.215 2.21.526 3.033 1.158.058-.39.075-.782.075-1.158 0-.91-.288-1.988-.975-2.792-.626-.732-1.622-1.281-3.167-1.229l-.316.02c-3.05.253-5.01-.08-6.291-.598a5.3 5.3 0 0 1-1.4-.811"
+                />
+              </svg>
+            </div>
+            <h3>Sustentable</h3>
+            <p>
+              Nos inspira la naturaleza. Investigamos y desarrollamos mezclas y
+              blends que sean respetuosos con el medio ambiente.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SECCION SOBRE NUESTRA TIENDA -->
+      <div class="container py-5">
+        <div class="row align-items-center">
+          <!-- TEXTO -->
+          <div class="col-12 col-lg-6">
+            <h2 class="mb-4 h2-darkText">Sobre Nuestra Tienda</h2>
+            <p>
+              En <strong>Serenité</strong> creamos productos que inspiran calma
+              y bienestar. Cada vela y aromatizador está hecho con ingredientes
+              naturales y un diseño artesanal pensado para transformar tus
+              espacios en refugios de paz.
+            </p>
+            <p>
+              Nuestro objetivo es acompañarte con fragancias que conecten con
+              tus emociones y momentos cotidianos, creando experiencias únicas.
+            </p>
+          </div>
+          <!-- IMAGEN -->
+          <div class="col-12 col-lg-6 text-center">
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./assets/nuestra-tienda/vela-mano_cpf0ny_c_scale,w_2180.jpg
+                "
+              />
+              <source
+                media="(min-width: 992px)"
+                srcset="
+                  ./assets/nuestra-tienda/vela-mano_cpf0ny_c_scale,w_1910.jpg
+                "
+              />
+              <img
+                src="./assets/nuestra-tienda/vela-mano_cpf0ny_c_scale,w_1080.jpg"
+                alt="Velas y Aromas"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+
+      <!-- EFECTO PARALLAX  -->
+      <section
+        class="parallax d-flex align-items-center justify-content-center text-white"
+      >
+        <div class="text-center p-4">
+          <h2 class="display-4 col-12">Serenité</h2>
+          <p class="lead col-12">
+            En Serenité, creemos en <strong>el poder de los aromas</strong> para
+            transformar lo cotidiano en serenidad. Cada fragancia es un viaje
+            hacia el equilibrio y la paz interior.
+          </p>
+        </div>
+      </section>
+
+      <!-- SECCION DE COMPRAS -->
+      <div class="container py-4" id="lineas">
+        <div class="row g-4">
+          <h2 class="text-center text-dark">Nuestra línea</h2>
+
+          <!-- Producto 1 -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div
+              class="product-card"
+              style="
+                background-image: url('assets/linea-mercat/mercat-portada.jpg');
+              "
+            >
+              <div class="overlay">
+                <h3>Línea Mercat</h3>
+                <p>Menta & Frescura</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-light mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalMercat"
+                >
+                  Ver productos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL -->
+          <!-- Modal de Línea MERCAT -->
+          <div
+            class="modal fade"
+            id="modalMercat"
+            tabindex="-1"
+            aria-labelledby="modalMercatLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content bg-light text-dark">
+                <!-- Header -->
+                <div class="modal-header border-0">
+                  <h2
+                    class="modal-title fw-bold text-dark"
+                    id="modalMercatLabel"
+                  >
+                    Línea Mercat
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                  <div class="row">
+                    <!-- Carrusel -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <div
+                        id="carouselMercat"
+                        class="carousel slide product-card"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-inner rounded">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/linea-mercat/vela-mercat.jpg"
+                              class="d-block w-100"
+                              alt="Vela Mercat"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-mercat/difudsor-mercat.jpg"
+                              class="d-block w-100"
+                              alt="Difusor Mercat"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-mercat/aceite-mercat.jpg"
+                              class="d-block w-100"
+                              alt="Aceite Línea Ámbar"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselMercat"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselMercat"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="col-12 col-md-12 col-lg-6 p-2">
+                      <h5 class="fw-bold">Características</h5>
+                      <p>
+                        Velas artesanales elaboradas con cera vegetal y aceites
+                        esenciales de alta pureza. Cada pieza está pensada para
+                        ofrecer una fragancia equilibrada y duradera, con
+                        envases reutilizables y materiales sostenibles. Duración
+                        aproximada: 40 horas.
+                      </p>
+
+                      <h5 class="fw-bold">Variedades</h5>
+                      <ul>
+                        <li>Vela aromática de Menta y Hierbas</li>
+                        <li>Difusor con varillas</li>
+                        <li>Spray ambiental refrescante</li>
+                      </ul>
+
+                      <p class="fs-5 mt-3">
+                        <strong>Precio:</strong>
+                        <span class="text-success fw-bold">$7.500</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer border-0 pb-4">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCarrito"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- MODAL ANIDADO -->
+          <div class="modal fade" id="modalCarrito" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">
+                    ¡Tu nuevo aroma te espera en el carrito!
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    El producto fue agregado con éxito. <br />
+                    Relajate, seguí explorando o pasá al carrito para finalizar
+                    tu compra.
+                  </p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    data-bs-dismiss="modal"
+                  >
+                    Seguir comprando
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 2 -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div
+              class="product-card"
+              style="
+                background-image: url('assets/linea-ambar/ambar-portada.jpg');
+              "
+            >
+              <div class="overlay">
+                <h3>Línea Ámbar</h3>
+                <p>Vetiver & Ámbar</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-light mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalAmbar"
+                >
+                  Ver productos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="modal fade"
+            id="modalAmbar"
+            tabindex="-1"
+            aria-labelledby="modalAmbarLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content bg-light text-dark">
+                <!-- Header -->
+                <div class="modal-header border-0">
+                  <h2
+                    class="modal-title fw-bold text-dark"
+                    id="modalAmbarLabel"
+                  >
+                    Línea Ámbar
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                  <div class="row">
+                    <!-- Carrusel -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <div
+                        id="carouselAmbar"
+                        class="carousel slide product-card"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-inner rounded">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/linea-ambar/ambar-vela.jpg"
+                              class="d-block img-fluid"
+                              alt="Vela Ámbar"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-ambar/linea-ambar-difusor.jpg"
+                              class="d-block img-fluid"
+                              alt="Difusor Ámbar"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-ambar/ambar-spray.jpg"
+                              class="d-block img-fluid"
+                              alt="Spray Ámbar Vetiver Sleep Mist"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselAmbar"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselAmbar"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="col-12 col-md-12 col-lg-6 p-2">
+                      <h5 class="fw-bold">Características</h5>
+                      <p>
+                        Productos artesanales formulados con esencias naturales
+                        y aceites esenciales puros. Cada pieza está diseñada
+                        para aportar armonía al ambiente, con envases
+                        reutilizables y materiales sustentables. Ideal para la
+                        relajación y el descanso nocturno.
+                      </p>
+
+                      <h5 class="fw-bold">Variedades</h5>
+                      <ul>
+                        <li>Vela aromática de Vetiver & Ámbar</li>
+                        <li>Difusor con varillas</li>
+                        <li>Sleep Mist relajante (Spray ambiental y textil)</li>
+                      </ul>
+
+                      <p class="fs-5 mt-3">
+                        <strong>Precio:</strong>
+                        <span class="text-success fw-bold">$7.500</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer border-0 pb-4">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCarrito"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 3 -->
+          <!-- TARJETA PRODUCTO -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div
+              class="product-card"
+              style="
+                background-image: url('assets/linea-natural/linea-natural-vela.jpg');
+              "
+            >
+              <div class="overlay">
+                <h3>Línea Natural</h3>
+                <p>Madreselva & Bambú</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-light mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalNatural"
+                >
+                  Ver productos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL LÍNEA NATURAL -->
+          <div
+            class="modal fade"
+            id="modalNatural"
+            tabindex="-1"
+            aria-labelledby="modalNaturalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content bg-light text-dark">
+                <!-- Header -->
+                <div class="modal-header border-0">
+                  <h2
+                    class="modal-title fw-bold text-dark"
+                    id="modalNaturalLabel"
+                  >
+                    Línea Natural
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                  <div class="row">
+                    <!-- Carrusel -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <div
+                        id="carouselNatural"
+                        class="carousel slide product-card"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-inner rounded">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/linea-natural/linea-natural-vela.jpg"
+                              class="d-block w-100"
+                              alt="Vela Natural"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-natural/linea-natural-difusor.jpg"
+                              class="d-block w-100"
+                              alt="Difusor Natural"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-natural/linea-natural-aceite.jpg"
+                              class="d-block w-100"
+                              alt="Spray Natural"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselNatural"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselNatural"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="col-12 col-md-12 col-lg-6 p-2">
+                      <h5 class="fw-bold">Características</h5>
+                      <p>
+                        Elaborada con cera vegetal y aceites esenciales de
+                        origen natural, la Línea Natural ofrece una experiencia
+                        aromática suave y equilibrada. Sus envases de vidrio
+                        esmerilado y materiales reciclables reflejan un
+                        compromiso con la sustentabilidad y la belleza
+                        minimalista.
+                      </p>
+
+                      <h5 class="fw-bold">Variedades</h5>
+                      <ul>
+                        <li>Vela aromática de Madreselva & Bambú</li>
+                        <li>Difusor con varillas</li>
+                        <li>Spray ambiental Natural</li>
+                      </ul>
+
+                      <p class="fs-5 mt-3">
+                        <strong>Precio:</strong>
+                        <span class="text-success fw-bold">$7.500</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer border-0 pb-4">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCarrito"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 4 -->
+          <!-- TARJETA PRODUCTO -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div
+              class="product-card"
+              style="
+                background-image: url('assets/linea-sayri/set-sayri-portada.jpg');
+              "
+            >
+              <div class="overlay">
+                <h3>Línea Sayri</h3>
+                <p>Notas Cítricas & Energía</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-light mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalSayri"
+                >
+                  Ver productos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL LÍNEA SAYRI -->
+          <div
+            class="modal fade"
+            id="modalSayri"
+            tabindex="-1"
+            aria-labelledby="modalSayriLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content bg-light text-dark">
+                <!-- Header -->
+                <div class="modal-header border-0">
+                  <h2
+                    class="modal-title fw-bold text-dark"
+                    id="modalSayriLabel"
+                  >
+                    Línea Sayri
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                  <div class="row">
+                    <!-- Carrusel -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <div
+                        id="carouselSayri"
+                        class="carousel slide product-card"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-inner rounded">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/linea-sayri/set-sayri-vela.jpg"
+                              class="d-block w-100"
+                              alt="Vela Sayri"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-sayri/set-sayri-difusor.jpg"
+                              class="d-block w-100"
+                              alt="Difusor Sayri"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-sayri/set-sayri-aceite.jpg"
+                              class="d-block w-100"
+                              alt="Spray Sayri"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselSayri"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselSayri"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="col-12 col-md-12 col-lg-6 p-2">
+                      <h5 class="fw-bold">Características</h5>
+                      <p>
+                        Elaborada con cera vegetal y aceites esenciales
+                        naturales, la Línea Sayri es una invitación a reconectar
+                        con la alegría y la claridad. Sus envases translúcidos y
+                        tonos cálidos reflejan la energía positiva de sus
+                        ingredientes cítricos.
+                      </p>
+
+                      <h5 class="fw-bold">Variedades</h5>
+                      <ul>
+                        <li>Vela aromática de Notas Cítricas</li>
+                        <li>Difusor con varillas Sayri</li>
+                        <li>Spray ambiental refrescante</li>
+                      </ul>
+
+                      <p class="fs-5 mt-3">
+                        <strong>Precio:</strong>
+                        <span class="text-success fw-bold">$7.500</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer border-0 pb-4">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCarrito"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 5 -->
+          <!-- TARJETA PRODUCTO -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div
+              class="product-card"
+              style="
+                background-image: url('assets/linea-tonel/linea-tonel-portada.jpg');
+              "
+            >
+              <div class="overlay">
+                <h3>Línea Tonel</h3>
+                <p>Notas Amaderadas & Calidez</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-light mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalTonel"
+                >
+                  Ver productos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL LÍNEA TONEL -->
+          <div
+            class="modal fade"
+            id="modalTonel"
+            tabindex="-1"
+            aria-labelledby="modalTonelLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content bg-light text-dark">
+                <!-- Header -->
+                <div class="modal-header border-0">
+                  <h2
+                    class="modal-title fw-bold text-dark"
+                    id="modalTonelLabel"
+                  >
+                    Línea Tonel
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                  <div class="row">
+                    <!-- Carrusel -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <div
+                        id="carouselTonel"
+                        class="carousel slide product-card"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-inner rounded">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/linea-tonel/linea-tonel-difusor.jpg"
+                              class="d-block w-100"
+                              alt="Difusor Tonel"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-tonel/linea-tonel-vela.jpg"
+                              class="d-block w-100"
+                              alt="Vela Tonel"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/linea-tonel/linea-tonel-aceite.jpg"
+                              class="d-block w-100"
+                              alt="Aceite Tonel"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselTonel"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselTonel"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="col-12 col-md-12 col-lg-6 p-2">
+                      <h5 class="fw-bold">Características</h5>
+                      <p>
+                        Elaborada con cera vegetal y aceites esenciales
+                        naturales, la Línea Tonel transmite serenidad y conexión
+                        con lo esencial. Su diseño sobrio y tonos cálidos
+                        reflejan la fuerza y nobleza de las maderas que la
+                        inspiran.
+                      </p>
+
+                      <h5 class="fw-bold">Variedades</h5>
+                      <ul>
+                        <li>Vela aromática de Maderas Nobles</li>
+                        <li>Difusor con varillas Tonel</li>
+                        <li>Spray ambiental amaderado</li>
+                      </ul>
+
+                      <p class="fs-5 mt-3">
+                        <strong>Precio:</strong>
+                        <span class="text-success fw-bold">$7.500</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer border-0 pb-4">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCarrito"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Producto 6 -->
+
+          <!-- TARJETA LÍNEA ESPECIAL -->
+          <div class="col-12 col-md-12 col-lg-4">
+            <div
+              class="product-card"
+              style="
+                background-image: url('assets/lineas-especiales/lineas-especiales-set4.jpg');
+              "
+            >
+              <div class="overlay">
+                <h3>Línea Especial</h3>
+                <p>Sets Naturales Exclusivos</p>
+                <button
+                  type="button"
+                  class="btn btn-outline-light mt-2"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalEspecial"
+                >
+                  Ver productos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- MODAL LÍNEA ESPECIAL -->
+          <div
+            class="modal fade"
+            id="modalEspecial"
+            tabindex="-1"
+            aria-labelledby="modalEspecialLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+              <div class="modal-content bg-light text-dark">
+                <!-- Header -->
+                <div class="modal-header border-0">
+                  <h2
+                    class="modal-title fw-bold text-dark"
+                    id="modalEspecialLabel"
+                  >
+                    Línea Especial
+                  </h2>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="modal"
+                    aria-label="Cerrar"
+                  ></button>
+                </div>
+
+                <!-- Body -->
+                <div class="modal-body">
+                  <div class="row">
+                    <!-- Carrusel -->
+                    <div class="col-12 col-md-12 col-lg-6">
+                      <div
+                        id="carouselEspecial"
+                        class="carousel slide product-card"
+                        data-bs-ride="carousel"
+                      >
+                        <div class="carousel-inner rounded">
+                          <div class="carousel-item active">
+                            <img
+                              src="assets/lineas-especiales/lineas-especiales-set2.jpg"
+                              class="d-block w-100"
+                              alt="Set Especial Natural"
+                            />
+                          </div>
+                          <div class="carousel-item">
+                            <img
+                              src="assets/lineas-especiales/set-especiales-portada.jpg"
+                              class="d-block w-100"
+                              alt="Set de relajación artesanal"
+                            />
+                          </div>
+                        </div>
+                        <button
+                          class="carousel-control-prev"
+                          type="button"
+                          data-bs-target="#carouselEspecial"
+                          data-bs-slide="prev"
+                        >
+                          <span class="carousel-control-prev-icon"></span>
+                        </button>
+                        <button
+                          class="carousel-control-next"
+                          type="button"
+                          data-bs-target="#carouselEspecial"
+                          data-bs-slide="next"
+                        >
+                          <span class="carousel-control-next-icon"></span>
+                        </button>
+                      </div>
+                    </div>
+
+                    <!-- Descripción -->
+                    <div class="col-12 col-md-12 col-lg-6 p-2">
+                      <h5 class="fw-bold">Características</h5>
+                      <p>
+                        Incluye productos seleccionados de edición limitada:
+                        velas, difusores, sprays, jabones y aceites esenciales.
+                        Elaborados artesanalmente con ingredientes naturales
+                        como coco, lavanda, piedra volcánica y esencias
+                        florales.
+                      </p>
+
+                      <h5 class="fw-bold">Variedades</h5>
+                      <ul>
+                        <li>Set Relajante de Lavanda & Cedro</li>
+                        <li>Set Tropical de Coco & Orquídea</li>
+                        <li>
+                          Set Equilibrio con piedra volcánica & esencias
+                          herbales
+                        </li>
+                      </ul>
+
+                      <p class="fs-5 mt-3">
+                        <strong>Precio:</strong>
+                        <span class="text-success fw-bold">$9.800</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Footer -->
+                <div class="modal-footer border-0 pb-4">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-bs-dismiss="modal"
+                  >
+                    Cerrar
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-dark"
+                    data-bs-dismiss="modal"
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalCarrito"
+                  >
+                    Agregar al carrito
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="p-4" id="taller">
+        <h2 class="text-center text-dark">Conoce nuestro taller</h2>
+
+        <p class="px-5 py-2">
+          Bienvenidos a nuestro taller artesanal. En este recorrido te invitamos
+          a conocer el corazón de nuestro espacio, donde cada vela cobra vida
+          entre aromas envolventes, colores suaves y materiales seleccionados
+          con cuidado. Cada rincón del taller refleja nuestra pasión por crear
+          piezas que transmitan calma, armonía y un toque de naturaleza en cada
+          detalle.
+        </p>
+
+        <p class="px-5 py-2">
+          Un rincón lleno de calma e inspiración. Acompañanos a descubrir cómo
+          nace cada fragancia y cómo transformamos simples ingredientes en velas
+          únicas, hechas con dedicación y amor. Desde la mezcla de las esencias
+          hasta el vertido del cera, cada paso es parte de un proceso artesanal
+          que busca despertar los sentidos y conectar con lo esencial.
+        </p>
+      </div>
+
+      <div class="video-container">
+        <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/jZYnZwAdrD4?si=qcGNPfiUWQ-DWNsfd&autoplay=1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> -->
+
+        <iframe
+          width="315"
+          height="560"
+          src="https://www.youtube.com/embed/jZYnZwAdrD4?autoplay=1&mute=1&loop=1&playlist=jZYnZwAdrD4"
+          title="YouTube video player"
+          allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+
+      <!-- formulario -->
+
+      <h2 class="mb-4 text-center text-dark pt-5" id="diseña">
+        Diseñá tu fragancia ideal
+      </h2>
+      <p class="text-center mb-4 mx-4">
+        Contanos cómo querés tu vela o aceite aromático y la preparamos
+        especialmente para vos.
+      </p>
+
+      <section class="container p-1">
+        <div class="row align-items-stretch">
+          <!-- Columna del texto y formulario -->
+          <div
+            class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+          >
+            <form
+              action="#diseña"
+              method="post"
+              enctype="multipart/form-data"
+              class="flex-grow-1 d-flex flex-column justify-content-between mb-4"
+            >
+              <div>
+                <div class="mb-3">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="nombre"
+                    name="nombre"
+                    placeholder="Tu nombre"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="email" class="form-label"
+                    >Correo electrónico</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="email"
+                    name="email"
+                    placeholder="tucorreo@email.com"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="tipoProducto" class="form-label"
+                    >Tipo de producto</label
+                  >
+                  <select class="form-select" id="tipoProducto">
+                    <option selected disabled>Elegí una opción</option>
+                    <option value="vela">Vela aromática</option>
+                    <option value="aceite">Aceite esencial</option>
+                    <option value="set">Set de aromas</option>
+                  </select>
+                </div>
+
+                <div class="mb-3">
+                  <label for="aroma" class="form-label">Aroma preferido</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="aroma"
+                    name="aroma"
+                    placeholder="Ej: madera, lavanda, eucalipto..."
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="tamano" class="form-label"
+                    >Tamaño o formato</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="tamano"
+                    name="tamano"
+                    placeholder="Ej: pequeño, mediano, grande"
+                  />
+                </div>
+
+                <div class="mb-3">
+                  <label for="mensaje" class="form-label"
+                    >Mensaje adicional</label
+                  >
+                  <textarea
+                    class="form-control"
+                    id="mensaje"
+                    rows="3"
+                    name="mensaje"
+                    placeholder="Contanos más sobre tu pedido..."
+                  ></textarea>
+                </div>
+              </div>
+
+              <div class="text-center mt-3">
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-dismiss="modal"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalFormulario"
+                >
+                  Enviar pedido
+                </button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Columna con la imagen -->
+          <div class="col-12 col-md-12 col-lg-6 mt-4 mt-md-0 mb-4">
+            <!-- <img src="assets/formulario-img.jpg" class="img-fluid rounded shadow w-100 h-100 object-fit-cover" alt="Velas artesanales"> -->
+
+            <picture>
+              <source
+                media="(min-width: 1200px)"
+                srcset="
+                  ./assets/formulario/formulario-img_ekmaeq_c_scale,w_2180.jpg
+                "
+              />
+              <source
+                media="(min-width: 992px)"
+                srcset="
+                  ./assets/formulario/formulario-img_ekmaeq_c_scale,w_1519.jpg
+                "
+              />
+              <img
+                src="./assets/formulario/formulario-img_ekmaeq_c_scale,w_1080.jpg"
+                alt="Velas artesanales"
+                class="img-fluid rounded shadow w-100 h-100 object-fit-cover"
+              />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <!-- modal de formulario -->
+      <div class="modal fade" id="modalFormulario" tabindex="-1">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">¡Tu pedido ha sido enviado con éxito!</h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Hemos recibido tu diseño de fragancia y lo revisaremos para
+                prepararte una propuesta personalizada. Te contactaremos pronto
+                para coordinar los próximos pasos.
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Cerrar
+              </button>
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-dismiss="modal"
+              >
+                Aceptar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="text-center text-white bg-dark py-5">
+      <div class="container">
+        <!-- Enlaces -->
+        <div class="row justify-content-center mb-4">
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-semibold">
+              <a
+                class="nav-link"
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#modalNosotros"
+                >Nosotros</a
+              >
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-semibold">
+              <a href="#lineas" class="text-white text-decoration-none"
+                >Fragancias</a
+              >
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-semibold">
+              <a href="#diseña" class="text-white text-decoration-none"
+                >Diseñá tu aroma</a
+              >
+            </h6>
+          </div>
+          <div class="col-md-2">
+            <h6 class="text-uppercase fw-semibold">
+              <a
+                href="mailto:bella.sosa@davinci.edu.ar"
+                class="text-white text-decoration-none"
+                >Contacto</a
+              >
+            </h6>
+          </div>
+        </div>
+
+        <hr class="border-light opacity-25" />
+
+        <!-- Texto -->
+        <p class="mb-4 px-3 text-white">
+          En <strong>Serenité</strong>, creemos que los aromas son una forma de
+          arte. Cada esencia está creada para transformar tu espacio en un
+          refugio de calma, armonía y bienestar.
+        </p>
+
+        <!-- Redes sociales -->
+        <div class="mb-4">
+          <a
+            href="https://www.instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white me-3 social-media-icons"
+          >
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a
+            href="https://www.facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white me-3 social-media-icons"
+          >
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a
+            href="https://www.tiktok.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-white me-3 social-media-icons"
+          >
+            <i class="bi bi-tiktok"></i>
+          </a>
+        </div>
+
+        <!-- Copyright -->
+        <div class="text-white-50 small">
+          © 2025 Serenité — Todos los derechos reservados.
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

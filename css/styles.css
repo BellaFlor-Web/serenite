@@ -1,0 +1,238 @@
+:root,
+[data-bs-theme="light"] {
+  --bs-primary: #2d3a1d;
+  --bs-secondary: #7d8b7f;
+  --bs-success: #2d3a1d;
+  --bs-danger: #dc3545;
+  --bs-warning: #ffc107;
+  --bs-info: #2d3a1d;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-body-font-family: "Quicksand", sans-serif;
+}
+
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
+}
+
+.btn-secondary {
+  background-color: var(--bs-secondary) !important;
+  border-color: var(--bs-secondary) !important;
+}
+
+.text-success {
+  color: var(--bs-success) !important;
+}
+
+/* nav-bar */
+h1 {
+  background-image: url(../assets/serenite-logo-dark-200px.png);
+  background-size: cover;
+  background-position: 0 center;
+  height: 60px;
+  width: 150px;
+  text-indent: -1000px;
+  overflow: hidden;
+  font-size: 0;
+}
+
+nav.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1020;
+}
+
+body {
+  padding-top: 75px;
+  font-family: "Quicksand", sans-serif !important;
+}
+
+#tienda,
+#lineas,
+#taller,
+#diseña {
+  scroll-margin-top: 75px;
+}
+
+/* carrusel */
+
+.carousel-item img {
+  height: 500px;
+  width: 500px;
+  object-fit: cover;
+}
+
+.carousel-caption h2,
+.carousel-caption p {
+  color: var(--bs-light);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* parallax */
+.parallax {
+  position: relative;
+  background-image: url("../assets/naturaleza-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 60vh;
+  color: var(--bs-light);
+  z-index: 1;
+}
+
+.parallax h2,
+.parallax p {
+  color: var(--bs-light);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Capa de opacidad */
+.parallax::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2); /* Cambia el 0.5 por más o menos opacidad */
+  z-index: -1; /* Se coloca detrás del contenido */
+}
+
+/* tarjetas */
+
+.product-card {
+  background-size: cover;
+  background-position: center center;
+  object-fit: cover;
+  height: 400px;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.03);
+  filter: brightness(0.9);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--bs-light);
+  text-align: center;
+  transition: background-color 0.4s ease;
+  padding: 20px;
+}
+
+.product-card:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.overlay h3 {
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: var(--bs-light);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.overlay p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  opacity: 0.9;
+  color: var(--bs-light);
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.overlay .btn {
+  border: 1px solid var(--bs-light);
+  color: var(--bs-light);
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.overlay .btn:hover {
+  border: 1px solid var(--bs-light);
+  color: var(--bs-dark);
+}
+
+h2 {
+  font-weight: 600;
+  color: var(--bs-light);
+}
+
+.h2-darkText {
+  color: var(--bs-dark);
+}
+
+h3 {
+  color: var(--bs-dark);
+}
+p {
+  color: var(--bs-dark);
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* video */
+.video-container {
+  height: 70vh;
+  padding: 0 5%;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* formulario */
+
+#diseña img {
+  height: 100%;
+  object-fit: cover;
+}
+
+form {
+  background-color: var(--bs-light);
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.social-media-icons {
+  color: var(--bs-light);
+}
+
+.btn-dark {
+  background-color: var(--bs-primary);
+  border: none;
+}
+
+.btn-dark:hover {
+  background-color: var(--bs-secondary);
+}
+
+.autor-container {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.autor-info {
+  padding: 1rem;
+}
