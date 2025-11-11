@@ -159,6 +159,8 @@
     </header>
 
     <main>
+
+      <!-- carrusel -->
       <div
         id="carouselExampleCaptions"
         class="carousel slide"
@@ -171,23 +173,23 @@
             data-bs-slide-to="0"
             class="active"
             aria-current="true"
-            aria-label="Slide 1"
+            aria-label="Diapositiva 1"
           ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="1"
-            aria-label="Slide 2"
+            aria-label="Diapositiva 2"
           ></button>
           <button
             type="button"
             data-bs-target="#carouselExampleCaptions"
             data-bs-slide-to="2"
-            aria-label="Slide 3"
+            aria-label="Diapositiva 3"
           ></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <div class="carousel-inner carousel-top">
+          <div class="carousel-item active ">
             <picture>
               <source
                 media="(min-width: 1200px)"
@@ -302,9 +304,9 @@
       <!-- SECCION TRES ICONOS -->
 
       <div class="container" id="tienda">
-        <div class="row">
+        <div class="row d-flex">
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="p-4">
+            <div class="p-4 d-flex justify-content-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -318,14 +320,14 @@
                 />
               </svg>
             </div>
-            <h3>Hecho a mano</h3>
-            <p>
+            <h3 class="d-flex justify-content-center" >Hecho a mano</h3>
+            <p class="text-center">
               Todo el proceso se hacen con manos expertas, la preparación, el
               volcado, la terminación y el empaque.
             </p>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="p-4">
+            <div class="p-4 d-flex justify-content-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -339,14 +341,14 @@
                 />
               </svg>
             </div>
-            <h3>Calidad</h3>
-            <p>
+            <h3 class="d-flex justify-content-center">Calidad</h3>
+            <p class="text-center">
               Más de 20 años de experiencia cuidando cada detalle en el diseño,
               producción y entrega de todos nuestros productos.
             </p>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <div class="p-4">
+            <div class="p-4 d-flex justify-content-center">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="60"
@@ -360,8 +362,8 @@
                 />
               </svg>
             </div>
-            <h3>Sustentable</h3>
-            <p>
+            <h3 class="d-flex justify-content-center">Sustentable</h3>
+            <p class="text-center">
               Nos inspira la naturaleza. Investigamos y desarrollamos mezclas y
               blends que sean respetuosos con el medio ambiente.
             </p>
@@ -490,21 +492,21 @@
                         data-bs-ride="carousel"
                       >
                         <div class="carousel-inner rounded">
-                          <div class="carousel-item active">
+                          <div class="carousel-item active carousel-size" >
                             <img
                               src="assets/linea-mercat/vela-mercat.jpg"
                               class="d-block w-100"
                               alt="Vela Mercat"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-mercat/difudsor-mercat.jpg"
                               class="d-block w-100"
                               alt="Difusor Mercat"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-mercat/aceite-mercat.jpg"
                               class="d-block w-100"
@@ -591,7 +593,7 @@
                     type="button"
                     class="btn-close"
                     data-bs-dismiss="modal"
-                    aria-label="Close"
+                    aria-label="Cerrar"
                   ></button>
                 </div>
                 <div class="modal-body">
@@ -680,21 +682,21 @@
                         data-bs-ride="carousel"
                       >
                         <div class="carousel-inner rounded">
-                          <div class="carousel-item active">
+                          <div class="carousel-item active carousel-size">
                             <img
                               src="assets/linea-ambar/ambar-vela.jpg"
                               class="d-block img-fluid"
                               alt="Vela Ámbar"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-ambar/linea-ambar-difusor.jpg"
                               class="d-block img-fluid"
                               alt="Difusor Ámbar"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-ambar/ambar-spray.jpg"
                               class="d-block img-fluid"
@@ -831,21 +833,21 @@
                         data-bs-ride="carousel"
                       >
                         <div class="carousel-inner rounded">
-                          <div class="carousel-item active">
+                          <div class="carousel-item active carousel-size">
                             <img
                               src="assets/linea-natural/linea-natural-vela.jpg"
                               class="d-block w-100"
                               alt="Vela Natural"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-natural/linea-natural-difusor.jpg"
                               class="d-block w-100"
                               alt="Difusor Natural"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-natural/linea-natural-aceite.jpg"
                               class="d-block w-100"
@@ -983,21 +985,21 @@
                         data-bs-ride="carousel"
                       >
                         <div class="carousel-inner rounded">
-                          <div class="carousel-item active">
+                          <div class="carousel-item active carousel-size">
                             <img
                               src="assets/linea-sayri/set-sayri-vela.jpg"
                               class="d-block w-100"
                               alt="Vela Sayri"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-sayri/set-sayri-difusor.jpg"
                               class="d-block w-100"
                               alt="Difusor Sayri"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-sayri/set-sayri-aceite.jpg"
                               class="d-block w-100"
@@ -1134,21 +1136,21 @@
                         data-bs-ride="carousel"
                       >
                         <div class="carousel-inner rounded">
-                          <div class="carousel-item active">
+                          <div class="carousel-item active carousel-size">
                             <img
                               src="assets/linea-tonel/linea-tonel-difusor.jpg"
                               class="d-block w-100"
                               alt="Difusor Tonel"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-tonel/linea-tonel-vela.jpg"
                               class="d-block w-100"
                               alt="Vela Tonel"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/linea-tonel/linea-tonel-aceite.jpg"
                               class="d-block w-100"
@@ -1286,14 +1288,14 @@
                         data-bs-ride="carousel"
                       >
                         <div class="carousel-inner rounded">
-                          <div class="carousel-item active">
+                          <div class="carousel-item active carousel-size">
                             <img
                               src="assets/lineas-especiales/lineas-especiales-set2.jpg"
                               class="d-block w-100"
                               alt="Set Especial Natural"
                             />
                           </div>
-                          <div class="carousel-item">
+                          <div class="carousel-item carousel-size">
                             <img
                               src="assets/lineas-especiales/set-especiales-portada.jpg"
                               class="d-block w-100"
@@ -1419,11 +1421,11 @@
         especialmente para vos.
       </p>
 
-      <section class="container p-1">
+      <section class="container">
         <div class="row align-items-stretch">
           <!-- Columna del texto y formulario -->
           <div
-            class="col-12 col-md-12 col-lg-6 d-flex flex-column justify-content-center"
+            class="col-12 col-md-12 col-lg-6"
           >
             <form
               action="#diseña"
@@ -1639,23 +1641,25 @@
         </p>
 
         <!-- Redes sociales -->
-        <div class="mb-4">
-          <a
+        <div class="mb-4 ">
+          <ul class="d-flex justify-content-center">
+            <li>  <a
             href="https://www.instagram.com"
             target="_blank"
             rel="noopener noreferrer"
             class="text-white me-3 social-media-icons"
           >
             <i class="bi bi-instagram"></i>
-          </a>
-          <a
+          </a></li>
+            <li>   <a
             href="https://www.facebook.com"
             target="_blank"
             rel="noopener noreferrer"
             class="text-white me-3 social-media-icons"
           >
             <i class="bi bi-facebook"></i>
-          </a>
+          </a></li>
+            <li>
           <a
             href="https://www.tiktok.com"
             target="_blank"
@@ -1663,7 +1667,10 @@
             class="text-white me-3 social-media-icons"
           >
             <i class="bi bi-tiktok"></i>
-          </a>
+          </a></li>
+          </ul>
+        
+       
         </div>
 
         <!-- Copyright -->

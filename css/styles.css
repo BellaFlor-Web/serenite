@@ -56,12 +56,24 @@ body {
   scroll-margin-top: 75px;
 }
 
+
 /* carrusel */
 
-.carousel-item img {
-  height: 500px;
-  width: 500px;
+.carousel-size img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px; 
   object-fit: cover;
+  object-position: center 55%;
+  border-radius: 0.5rem;
+
+}
+
+.carousel-top img{
+  height: 60vh;
+  object-fit: cover;
+  object-position: center;
+  
 }
 
 .carousel-caption h2,
@@ -104,14 +116,16 @@ body {
 
 .product-card {
   background-size: cover;
-  background-position: center center;
-  object-fit: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   height: 400px;
   position: relative;
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.4s ease, filter 0.4s ease;
 }
+
+
 
 .product-card:hover {
   transform: scale(1.03);
@@ -235,4 +249,13 @@ form {
 
 .autor-info {
   padding: 1rem;
+}
+
+/* Footer */
+a{
+  text-decoration: none;
+
+}
+li{
+  list-style: none;
 }
